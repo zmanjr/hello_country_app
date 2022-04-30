@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hello City</title>
+        <title>About Us | Hello City</title>
     </head>
     <body class="antialiased">
-       <h1>Hello from Benin</h1>
-       <p>It's currently {{ date('h:i A')}}</p>
+       <h1>Built with &hearts; by Zman Jr</h1>
+       <p>It's currently {{ date('h:i A')}}. <a href = "/">Back to welcome page</a></p>
 
        <footer>
            <p>&copy; Copyright {{ date('Y')}} &middot; <a href="/about-us">About Us</a></p>
