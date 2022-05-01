@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
+Route::name('app_home')->get('/', function () {
     return view('pages/welcome');
 });
 
-ROute::get('/about-us', function() {
+Route::get('/about-us', function() {
     return view('pages/about_us');
-});
+})->name('app_about');
