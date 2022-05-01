@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title',config('app.name'))</title>
     </head>
-    <body class="antialiased">
-        @yield('content')
+    <body class="antialiased" style="text-align : center;">
+        <main role="main">
+            @yield('content')
+        </main>
 
        <footer>
         <p>
