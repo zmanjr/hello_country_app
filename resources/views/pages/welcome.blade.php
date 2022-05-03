@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts/base')
 
 @section('content')
 <div style="margin : 80px;">

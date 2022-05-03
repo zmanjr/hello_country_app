@@ -1,6 +1,6 @@
-@extends('base')
+@extends('layouts/base',['title' => 'About Us'])
 
-@section('title','About us | '. config('app.name'))
+
 @section('content')
     <div>
         <div style="margin : 80px;">

@@ -3,20 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@yield('title',config('app.name'))</title>
+        <title>{{ page_title($title ?? null) }}</title>
     </head>
     <body class="antialiased" style="text-align : center;">
         <main role="main">
             @yield('content')
         </main>
 
-       <footer>
-        <p>
-            &copy; Copyright {{ date('Y')}} &middot; 
-            @if(!Route::is('app_about'))
-            <a href="{{route('app_about')}}">About Us</a>
-            @endif
-        </p>
-       </footer>
+        @include('layouts/partials/_footer')
     </body>
 </html>
